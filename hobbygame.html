@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+		<style>.swiper {
+    width: 1500px;
+    height: 920px;
+} 
+	
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+</style>
+	</head>
+	<body>
+		<div class="swiper">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+					<img src="images/6.jpg" alt="">
+				</div>
+		        <div class="swiper-slide">
+					<img src="images/7.jpg" alt="">
+				</div>
+				
+		        <div class="swiper-slide">
+					<img src="images/8.jpg" alt="">
+				</div>
+		    </div>
+		    <!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		    
+		    <!-- 如果需要导航按钮 -->
+		    <div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>
+		    
+		    <!-- 如果需要滚动条 -->
+		    <div class="swiper-scrollbar"></div>
+		</div>
+		<script src="swiper/swiper-bundle.min.js"></script>
+		<script>        
+		  var mySwiper = new Swiper ('.swiper', {
+		    direction: 'vertical', // 垂直切换选项
+		    loop: true, // 循环模式选项
+		    
+		    // 如果需要分页器
+		    pagination: {
+		      el: '.swiper-pagination',
+		    },
+		    
+		    // 如果需要前进后退按钮
+		    navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    },
+		    
+		    // 如果需要滚动条
+		    scrollbar: {
+		      el: '.swiper-scrollbar',
+		    },
+			autoplay:{
+			                delay:3000, //自动切换时间；
+			
+			                //与loop有关，设置为true，loop失效
+			                stopOnLastSlide:false,
+			
+			                //用户操作之后，是否禁止自动切换（默认true禁止/设置false允许）
+			                disableOnInteraction: false,
+			            },
+		  })        
+		  </script>
+	</body>
+</html>

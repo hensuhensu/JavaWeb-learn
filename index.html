@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简历</title>
-    <link rel="stylesheet" href="index.css">
-
+	<title>个人博客</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>
 <body>
 
@@ -14,27 +14,27 @@
     <nav class="navbar">
         <a href="#home">主页</a>
         <a href="#about">个人简历</a>
+        <a href="#hobby">我的爱好</a>
         <a href="#portfolio">我的偶像</a>
         <a href="#contact">联系我</a>
     </nav>
-
 </header>
 
-<section class="home" id="home">
-
-    <div class="content">
-        <h3 class="text"> 你好，欢迎来到我的主页！ </h3>
-        <a href="#about" class="btn">about me</a>
-    </div>
-
-    <div class="image">
-        <img src="images/touxiang.jpg" alt="">
-    </div>
-
-</section>
 
 
 
+ <section class="home" id="home">
+ 
+     <div class="content">
+         <h3 class="animate__animated animate__backInDown"> 你好，欢迎来到我的主页！ </h3>
+         <a href="#about" class="btn">about me</a>
+     </div>
+     <div class="image">
+         <img src="images/touxiang.jpg" alt="">
+     </div>
+ 
+ </section>
+ 
 <section class="about" id="about">
 
 <h1 class="heading"> 个人简历 </h1>
@@ -51,7 +51,7 @@
     	<div style="padding-right:3cm;padding-top:1.5cm;float: right;display: inline;">
     	<h3 class="ex1">喜欢的运动：马拉松长跑、乒乓球、游泳</h2>
     	<h3 class="ex1">喜欢的音乐：说唱、粤语、民谣</h3>
-    	<h3 class="ex1">喜欢的游戏：英雄联盟、三国杀</h3>
+    	<h3 class="ex1">喜欢的游戏：英雄联盟、守望先锋、三国杀</h3>
     	<h3 class="ex1">喜欢的电影：经典片、爱情片、动作片</h3>
     	<h3 class="ex1">喜欢的主播：水晶哥</h3>
     	</div>
@@ -63,38 +63,60 @@
 </section>
 
 
+
+
+<section class="hobby" id = "hobby">
+	<h1 class="heading">我的爱好 </h1>
+	<p>单击图片可跳转页面</p>
+	
+	<div class="grid-container">
+		<div class = "grid-item" id="">
+			<a href="hobbygame.html"><img src="images/8.jpg" alt="" ></a>
+		</div>
+		
+		<div class = "grid-item" id="">
+			<a href="run.html"><img src="images/2.jpg" alt=""></a>
+			
+		</div>
+		<div class = "grid-word">玩英雄联盟</div>
+		<div class = "grid-word">高校百英里长跑</div>
+		
+	</div>
+	
+
+</section>
+
+
 <section class="portfolio" id="portfolio">
 
     <h1 class="heading">我的偶像 </h1>
+	<p>点击放大镜可查看运动员信息</p>
 
     <div class="box-container">
 
-	
         <div class="box">
             <img src="images/1.jpg" alt="">
-            
+            <button id = "search" class = "search" onclick="q()"></button>
         </div>
 
-    
         <div class="box">
             <img src="images/3.jpg" alt="">
-            
+            <button id = "search" class = "search" onclick="w()"></button>
         </div>
 
         <div class="box">
             <img src="images/4.jpg" alt="">
-            
+            <button id = "search" class = "search" onclick="e()"></button>
         </div>
 
         <div class="box">
             <img src="images/5.jpg" alt="">
-           
+			<button id = "search" class = "search" onclick="s()"></button>
         </div> 
 	
 
-        
 
-    </div>
+	</div>
 
 </section>
 
@@ -121,6 +143,22 @@
 
 
 </section>
+	<script>
+		function q(){
+			alert('埃鲁德·基普乔格（Eliud Kipchoge），1984年11月5日出生于肯尼亚西部南迪县，肯尼亚马拉松运动员，马拉松男子世界纪录创造者。')
+		}
+		function w(){
+			alert('这是马拉松他破二前的训练')
+		}
+		function e(){
+			alert('大迫杰，日本马拉松运动员。')
+		}
+		function s(){
+			alert('2020东京马拉松赛，日本选手大迫杰以2:05:29成绩获得国内第一，再次刷新自己创造的日本国家记录，提高了21秒。')
+		}
+		
+	</script>
+
 
 
 </body>
